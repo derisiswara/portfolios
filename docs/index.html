@@ -1340,7 +1340,7 @@
     const html = document.documentElement;
     const icon = themeToggle.querySelector('i');
 
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     html.setAttribute('data-theme', savedTheme);
     icon.className = savedTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
 
